@@ -1,0 +1,19 @@
+Sub tmp()
+
+    Dim A As Variant
+    
+    A = Split(Date, "/")
+    
+    Dim i As Long
+    For i = LBound(A) To UBound(A)
+        Debug.Print A(i)
+    Next
+    
+    Debug.Print "------------------"
+    
+    Dim item As Variant
+    For Each item In A
+        Debug.Print item
+    Next
+    
+End Sub
